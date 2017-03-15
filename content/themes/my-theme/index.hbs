@@ -1,0 +1,44 @@
+{{!< default}}
+<div class="cont">
+    <div class="cont-left">
+        {{#foreach posts}}
+        <div class="page">
+            <header>
+                <a href="{{url}}"><h1>{{title}}</h1></a>
+                <section>
+                    发布日期：{{published_at}} 标签：{{tag}}
+                </section>
+            </header>
+            <content>
+                   {{excerpt characters="140"}}
+            </content>
+        </div>
+        {{/foreach}}
+    </div>
+                <div class="cont-right">
+                    <div class="hot">
+                        <h1>热门文章</h1>
+                        <content>
+                            {{#foreach posts columns="5"}}
+                            <li><a href="{{url}}">{{title}}</a></li>
+                            {{/foreach}}
+                        </content>
+                    </div>
+                    <div class="tag">
+                        <h1>标签云</h1>
+                        <content>
+                            {{#foreach tags }}
+                            <a href="#">{{name}}</a>
+                            {{/foreach}}
+                        </content>
+                    </div>
+                    <div class="new">
+                        <h1>最新文章</h1>
+                        <content>
+                            {{#foreach posts columns="5"}}
+                            <li><a href="{{url}}">{{title}}</a></li>
+                            {{/foreach}}
+                        </content>
+                    </div>
+                </div>
+            </div>

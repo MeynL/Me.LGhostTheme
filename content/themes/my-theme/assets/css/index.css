@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 251542 */
+  src: url('https://at.alicdn.com/t/font_cjebt676pfrbe29.eot');
+  src: url('https://at.alicdn.com/t/font_cjebt676pfrbe29.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_cjebt676pfrbe29.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_cjebt676pfrbe29.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_cjebt676pfrbe29.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:30px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+body{
+    font-family: "Microsoft YaHei","iconfont"  !important;
+}
+body,
+div,
+ul,
+ol,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0px;
+    padding: 0px;
+}
+a,
+a:hover,
+a:active{
+    text-decoration: none;
+    color: #000;
+}
+.nav{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+.nav .nav-cont{
+    width: 1000px;
+    margin: 0 auto;
+    height: 50px;
+    border-bottom: 1px solid #AFAFAF;
+    background: #FFF;
+}
+#logo{
+    color: blue;
+    float: left;
+    font-size: 40px;
+}
+.nav-menu{
+    float: right;
+    overflow:hidden;
+    line-height: 50px;
+    vertical-align: bottom;
+}
+.nav-menu a{
+    color: #000;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+
+
+
+.cont{
+    overflow: hidden;
+    width: 1000px;
+    margin: 80px auto;
+}
+.cont-left{
+    width: 60%;
+    float: left;
+}
+.cont .cont-left .page{
+    width: 100%;
+    border-bottom: 1px solid #AFAFAF;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.cont .cont-left .page h1{
+    font-size: 20px;
+}
+.cont .cont-left .page header{
+    text-align: center;
+}
+.cont .cont-left .page header section{
+    font-size: 13px;
+    color: #888;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.cont .cont-left .page content{
+    text-align: left;
+}
+.cont .cont-right{
+    width: 30%;
+    float: right;
+}
+.cont .cont-right h1{
+    width: 99%;
+    font-size: 20px;
+    border-radius: 5px 5px 0 0 ;
+    border-bottom: 1px dashed #888;
+}
+.cont .cont-right content{
+    border-top: 0px;
+    width: 99%;
+    display: block;
+    min-height: 200px;
+}
+.cont .cont-right .hot content li,
+.cont .cont-right .new content li{
+    list-style: disc;
+    margin-top: 10px;
+}
+.cont .cont-right .hot content a:hover,
+.cont .cont-right .new content a:hover{
+    text-decoration: underline;
+}
+.cont .cont-right .tag a{
+    background: #888;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 0px 5px 0px 5px;;
+    color: #000;
+}
+
+.footer {
+    background: #BFBFBF;
+    width: 100%;
+    height: 150px;
+}
+
+.backtop{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+    display: none;
+}
+.backtop ,
+.backtop:hover{
+    background: #000;
+    color: #FFF;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 40px;
+}
+#slect{
+    cursor: pointer;
+}
+.slect-input{
+    clear: both;
+    background: #3c839d;
+    padding: 8px 10px 10px 10px;
+    display: none;
+}
+.slect-input input{
+    width: 95%;
+}
+.slect-input button{
+    width: 4%;
+    padding: 0px;
+}
+
+/*
+    博文详情
+*/
+.post-cont{
+    overflow: hidden;
+    margin: 100px auto;
+    width: 800px;
+}
+.post-cont header{
+    text-align: center;
+}
