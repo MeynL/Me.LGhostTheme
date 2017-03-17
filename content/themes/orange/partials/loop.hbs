@@ -1,0 +1,35 @@
+<div class="right">
+    <div class="about">
+        <h1><span>关于博主</span><i>|</i>About Blogger</h1>
+        <a href="#" title="mail">
+            <i class="iconfont">&#xe668;</i>
+        </a>
+        <a href="#" title="QQ">
+            <i class="iconfont">&#xe8b1;</i>
+        </a>
+        <a href="#" title="weibo">
+            <i class="iconfont">&#xe61e;</i>
+        </a>
+    </div> 
+    <div class="tags">
+        <h1><span>标签云</span><i></i>>|</i>Tag Cloud</h1>
+        {{! Tag Cloud}}
+        {{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
+            {{tags separator=" "}}
+        {{/get}}
+    </div>
+    <div class="hot">
+        <h1><span>推荐文章</span><i>|</i>Recommend</h1>
+        {{#get "posts" limit="all" include="count.posts" order="count.posts desc"}}
+        {{#foreach posts}}
+        <h2>
+            {{#if image}}
+            <img src="{{image}}">
+            {{/if}}
+            <strong><a href="{{url absolute="true"}}">{{title}}</a></strong><br>
+            <em>发布时间：{{date published_at format="MMMM YY,DD"}} 作者：{{author.name}}</em>
+        </h2>
+        {{/foreach}}
+        {{/get}}
+    </div>
+</div>

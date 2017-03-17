@@ -1,0 +1,29 @@
+{{!< default}}
+<div class="left">
+{{#post}}
+            <div class="title">
+                <i></i><span>文章详情</span>
+            </div>
+            <header>
+                <h2>{{title}}</h2>
+                <section>
+                    <i class="iconfont"> &#xe619;</i>
+                    {{date published_at format="MMMM DD, YYYY"}}
+                    &nbsp;&nbsp;
+                    <i class="iconfont"> &#xe73a;</i>
+                    {{author.name}}
+                    &nbsp;&nbsp;
+                    <i class="iconfont"> &#xe626;</i>
+                    {{tags}}
+                </section>
+            </header>
+            <content>
+               {{content}}
+            </content>
+            <footer>
+                <i></i>
+                欢迎转载，转载请注明出处【MeynLCSS】
+            </footer>
+{{/post}}
+</div>
+{{> "loop"}}

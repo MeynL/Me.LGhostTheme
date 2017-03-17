@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{meta_title}}</title>
+        <link type="text/css" rel="stylesheet" href="{{asset "css/index.css"}}"/>
+    {{ghost_header}}
+    </head>
+    <body>
+        <!--header-->
+        <div class="header tblock">
+            <a href="#"><img alt="logo" src="{{asset "img/logo.png"}}" title="MeynL的博客" ></a>
+            <div class="select">
+                <i></i>
+                <form>
+                <input id="slect-input" type="text">
+                <input type="submit" id="slect" value="搜索">
+                </form>
+            </div>
+        </div>
+        {{!--<!--nav-->
+        {{navigation}}
+        <!--content-->
+        <div class="cont tblock">
+            <!--left-->
+                {{{body}}}
+            <!--right-->
+            
+        </div>--}}
+        <div id="result">13231231231</div>
+        {{ghost_footer}}
+        <script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{{asset "js/jquery.ghostHunter.js"}}"></script>
+        <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+        
+    </body>
+</html>

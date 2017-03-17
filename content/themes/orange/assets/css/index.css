@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'iconfont';  /* project id 251576 */
-  src: url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.eot');
-  src: url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.svg#iconfont') format('svg');
+    font-family: 'iconfont';
+    /* project id 251576 */
+    src: url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.eot');
+    src: url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.eot?#iefix') format('embedded-opentype'), url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.woff') format('woff'), url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.ttf') format('truetype'), url('http://at.alicdn.com/t/font_48sgv1r2cl18m2t9.svg#iconfont') format('svg');
 }
-.iconfont{
-    font-family:"iconfont" !important;
-    font-size:30px;font-style:normal;
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 30px;
+    font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
-    }
+}
+
 body,
 div,
 ul,
@@ -23,106 +24,125 @@ h4,
 h5,
 h6,
 button,
-input{
+input {
     margin: 0px;
     padding: 0px;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     display: inline-block;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 a,
 a :hover,
-a :active{
+a :active {
     color: #000;
-    text-decoration: none;  
+    text-decoration: none;
 }
-em{
+
+em {
     font-style: normal;
 }
-.tblock{
+
+.tblock {
     width: 1140px;
     margin: auto;
 }
-body{
+
+body {
     background: #EEE;
 }
-@media screen and (min-width: 1140px){
-    .tblock{
-        width:1140px;
+
+@media screen and (min-width: 1140px) {
+    .tblock {
+        width: 1140px;
     }
-    .left{
+    .left {
         width: 65%;
     }
 }
 
-@media screen and (max-width:1140px){
-    .tblock{
+@media screen and (max-width:1140px) {
+    .tblock {
         width: 940px;
         margin: auto;
     }
-    .left{
+    .left {
         width: 65%;
     }
 }
-@media screen and  (max-width:940px){
-    .tblock{
+
+@media screen and (max-width:940px) {
+    .tblock {
         width: 740px;
         margin: auto;
     }
-    .min-hidden{
+    .min-hidden {
         display: none;
     }
-    .left{
+    .left {
         width: 100%;
     }
 }
-@media screen and  (max-width:740px){
-    .tblock{
+
+@media screen and (max-width:740px) {
+    .tblock {
         width: 100%;
         margin: auto;
     }
-    .min-hidden{
+    .min-hidden {
         display: none;
     }
-    .left{
+    .left {
         width: 90%;
     }
 }
+
+
 /*头部*/
-.header{
+
+.header {
     vertical-align: middle;
     height: 80px;
     line-height: 80px;
 }
-.header a{
+
+.header a {
     float: left;
     margin-top: 20px;
     height: 0px;
 }
-.header a img{
+
+.header a img {
     height: 40px;
     width: auto;
     margin-left: 20px;
 }
+
+
 /*搜索*/
+
 .select {
     float: right;
 }
-.select input{
+
+.select input {
     width: 200px;
     height: 25px;
     border: 3px solid #DFDFDF;
     outline: none;
 }
-.select button{
+
+.select  #slect{
     background: #DFDFDF;
     border: none;
     border-bottom: 1px solid #DFDFDF;
@@ -132,76 +152,96 @@ body{
     outline: none;
     margin-left: -5px;
 }
+
+
 /*导航*/
+
 .nav {
     margin-top: 10px;
     width: 100%;
 }
-.nav-cont{
+
+.nav-cont {
     border-top: 2px solid #DFDFDF;
     border-bottom: 2px solid #DFDFDF;
     line-height: 50px;
-    
 }
-.float{
+
+.float {
     position: fixed;
     margin: 0px auto;
     background: #EEE;
     top: 0px;
 }
-.nav a{
+
+.nav a {
     padding: 5px 25px 5px 25px;
     font-weight: bold;
     cursor: pointer;
 }
+
 .nav .act,
-.nav a:hover{
+.nav a:hover {
     background: #FF6B47;
     border-radius: 3px;
     color: #fff;
 }
+
+
 /*内容*/
-.cont{
+
+.cont {
     margin-top: 20px;
     background: #fff;
 }
+
+
 /*左侧文章区*/
-.cont .left{
+
+.cont .left {
     float: left;
     border-radius: 3px;
     background: #FFF;
     padding: 20px;
 }
-.cont .left .article .art-header h1{
+
+.cont .left .article .art-header h1 {
     font-size: 23px;
     color: #333;
 }
-.cont .left .article .art-header .section{
+
+.cont .left .article .art-header .section {
     line-height: 40px;
     font-size: 13px;
     color: #888;
 }
-.cont .left .article .art-header h3 a{
+
+.cont .left .article .art-header h3 a {
     border-radius: 3px;
     background: #FF6B47;
     color: #fff;
     font-size: 15px;
     padding: 1px 5px 1px 5px;
+    margin-left: 10px;
 }
-.cont .left .article .art-content{
+
+.cont .left .article .art-content {
     width: 100%;
     min-height: 100px;
     color: #555;
     font-size: 17px;
     line-height: 19px;
 }
-.cont .left .article .art-content img{
+
+.cont .left .article .art-content img {
     height: 120px;
     width: 160px;
     float: left;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
-.cont .left .article .art-footer{
+
+.cont .left .article .art-footer {
     background: #DFDFDF;
     width: 100%;
     height: 3px;
@@ -209,20 +249,26 @@ body{
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.cont .left .article .art-footer .colorbar{
+
+.cont .left .article .art-footer .colorbar {
     background: #FF6B47;
     width: 15%;
     height: 100%;
 }
+
+
 /*右侧*/
-.cont .right{
+
+.cont .right {
     width: 30%;
     float: right;
 }
-.cont .right div{
+
+.cont .right div {
     margin-bottom: 20px;
 }
-.cont .right h1{
+
+.cont .right h1 {
     font-size: 15px;
     font-weight: normal;
     color: #BBB;
@@ -231,54 +277,64 @@ body{
     border-radius: 3px;
     margin-bottom: 10px;
 }
+
 .about a,
-.about a i:hover{
+.about a i:hover {
     color: #FF6B47;
 }
-.about a i{
+
+.about a i {
     padding: 0px;
     margin-left: 5px;
 }
-.cont .right span{
+
+.cont .right span {
     color: #FF6B47;
     font-size: 17px;
     font-weight: bold;
 }
-.cont .right h1 i{
+
+.cont .right h1 i {
     margin: 0px 10px 0px 10px;
     font-style: normal;
 }
-.tags{
+
+.tags {
     min-height: 150px;
 }
-.tags a{
-    padding: 0px 10px 0px 10px;
+
+.tags a {
+    padding: 0px 12px 0px 12px;
     background: #FF6B47;
     border-radius: 3px;
     color: #fff;
+    line-height: 32px;
     margin-left: 5px;
+    font-size: 13px;
+    height: 32px;
     margin-bottom: 5px;
     display: inline-block;
 }
 
-.hot{
+.hot {}
 
-}
-.hot img{
+.hot img {
     float: left;
     width: 60px;
     height: 60px;
     display: block;
     margin-right: 5px;
 }
-.hot h2{
+
+.hot h2 {
     font-size: 15px;
     width: 100%;
     font-weight: 500;
     color: #333;
     margin-top: 10px;
 }
-.hot em{
+
+.hot em {
     display: block;
     overflow: hidden;
     white-space: nowrap;
@@ -288,7 +344,8 @@ body{
     color: #AAA;
     margin-top: -10px;
 }
-.hot strong{
+
+.hot strong {
     white-space: nowrap;
     display: block;
     overflow: hidden;
@@ -297,13 +354,15 @@ body{
 
 
 /*post页*/
-.title{
+
+.title {
     line-height: 17px;
     height: 30px;
     border-bottom: 1px solid #DFDFDF;
 }
-.title i{
-    background:#FF6B47;
+
+.title i {
+    background: #FF6B47;
     width: 5px;
     height: 17px;
     margin-left: 20px;
@@ -311,39 +370,46 @@ body{
     margin-bottom: -2px;
     display: inline-block;
 }
-.title span{
+
+.title span {
     font-size: 17px;
 }
-.left header{
+
+.left header {
     text-align: center;
     line-height: 40px;
     border-bottom: 1px solid #DFDFDF;
     margin-bottom: 20px;
 }
-.left header h2{
+
+.left header h2 {
     font-size: 23px;
     color: #555;
 }
+
 .left header section i,
-.left header section{
+.left header section,
+.left header section a {
     font-size: 15px;
     color: #AAA;
 }
-.left content{
+
+.left content {
     display: block;
     padding-bottom: 20px;
     border-bottom: 1px solid #DFDFDF;
     margin-bottom: 10px;
 }
 
-.left footer{
+.left footer {
     width: 100%;
     background: #CCC;
     height: 50px;
     border-radius: 0px 3px 3px 0px;
     line-height: 50px;
 }
-.left footer i{
+
+.left footer i {
     background: #FF6B47;
     height: 100%;
     width: 5px;

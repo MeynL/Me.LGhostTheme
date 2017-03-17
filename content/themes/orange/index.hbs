@@ -1,0 +1,24 @@
+{{!< default}}
+    <div class="left">
+    {{#foreach posts}}
+         <div class="article">
+                <div class="art-header">
+                        <a href="{{url}}"><h1>{{title}}</h1></a>
+                        <h3 class="tag">{{tags separator=" "}}</h3>
+                        <div class="section"> 
+                            发布时间：{{date published_at format="MMMM YY,DD"}} 作者:{{author.name}}
+                        </div>
+                    </div>
+                    <div class="art-content">
+                        {{#if image}}
+                        <img src="{{image}}">
+                        {{/if}}
+                        {{excerpt characters="200"}}
+                    </div>
+                    <div class="art-footer">
+                        <div class="colorbar"></div>
+                    </div>
+                </div>
+    {{/foreach}}
+    </div>
+    {{> "loop"}}
